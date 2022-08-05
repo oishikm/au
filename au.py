@@ -44,7 +44,7 @@ class AU_Runner:
             os.system('apt upgrade')
 
         else:
-            print('Error : Check usage.')
+            print('Error: Check usage.')
             self.usage()
 
 
