@@ -19,10 +19,10 @@ class AU_Runner:
         print(
             'Usage: au [options]',
             '\nOptions:',
-            '\n-h, --help\t\tDisplay this information.',
-            '\n-r\t\t\tRefresh available upgrades.',
-            '\n-l\t\t\tList available upgrades.',
-            '\n-i\t\t\tInstall available upgrades.'            
+            '\n  -h, --help\t\tDisplay this information.',
+            '\n  -r\t\t\tRefresh available upgrades.',
+            '\n  -l\t\t\tList available upgrades.',
+            '\n  -i\t\t\tInstall available upgrades.'            
         )
 
 
