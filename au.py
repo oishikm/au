@@ -17,7 +17,7 @@ class AU_Runner:
 
     def usage(self):
         print(
-            'Usage: au [options]',
+            'Usage: au [option]',
             '\nOptions:',
             '\n  -h, --help\t\tDisplay this information.',
             '\n  -r\t\t\tRefresh available upgrades.',
@@ -43,8 +43,12 @@ class AU_Runner:
         elif option == '-i':
             os.system('apt upgrade')
 
+        elif option == 'error':
+            print('Error: au only accepts one positional argument (check usage).')
+            self.usage()
+
         else:
-            print('Error: Check usage.')
+            print(f'Error: incorrect argument \'{option}\' (check usage).')
             self.usage()
 
 
